@@ -1,0 +1,57 @@
+.movies {
+  .movie-image {
+    height: 230px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+    @include media-breakpoint-down(md) {
+      height: 348px;
+    }
+    @include media-breakpoint-down(md) {
+      width: 232px;
+      height: 348px;
+      margin: auto;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: .6s;
+    }
+    .watchlist-wrapper {
+      background: rgba($white, 86%);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      transition: .4s;
+    }
+  }
+  .movie-image:hover {
+    img { transform: scale(1.1) }
+    .watchlist-wrapper { opacity: 1; }
+  }
+}
+
+.movie-details {
+  p { font-weight: 200; }
+  .movie-image {
+    height: 600px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 2px;
+    }
+  }
+}
+
+.movie-reviews {
+  p { font-weight: 200; }
+}
+
+.stars .fas {
+  color: $yellow;
+}

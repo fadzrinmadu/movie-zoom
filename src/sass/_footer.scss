@@ -1,0 +1,13 @@
+footer {
+  background: $bg-footer;
+  padding-top: 80px;
+  padding-bottom: 36px;
+  color: $white;
+  font-size: 0.875rem;
+  font-weight: lighter;
+  .footer-brand {
+    font-size: 24px;
+  }
+  a { color: inherit }
+  a:hover { color: $red; }
+}

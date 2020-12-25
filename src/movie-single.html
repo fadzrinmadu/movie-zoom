@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://kit.fontawesome.com/e8bbb49528.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <title>Movies Zoom</title>
+</head>
+<body>
+  
+  <header>
+    <app-bar></app-bar>
+  </header>
+
+  <main class="mt-7">
+    <div class="container">
+      
+      <movie-details></movie-details>
+      
+      <!-- Movie Reviews -->
+      <section class="movie-reviews mb-6">
+        <div class="row text-center text-md-left">
+          <div class="col movie-header d-md-flex justify-content-between align-items-center">
+            <h2>Reviews</h2>
+          </div>
+        </div>
+        <hr />
+        <div class="row mt-5">
+          <div class="col">
+            <div class="row mb-4">
+              <div class="col-md-7">
+                <div class="media">
+                  <img src="img/user-madison-parham.png" alt="madison parham" class="img-fluid mr-3">
+                  <div class="media-body">
+                    <h5>Madison Parham</h5>
+                    <p>tempor dolor reprehenderit nostrud aliquip consequat excepteur dolor nulla reprehenderit exercitation fugiat et eiusmod</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 d-flex justify-content-end align-items-center">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col-md-7">
+                <div class="media">
+                  <img src="img/user-lebo-makatte.png" alt="lebo makatte" class="img-fluid mr-3">
+                  <div class="media-body">
+                    <h5>Lebo Makatte</h5>
+                    <p>proident cillum aute ad nisi officia ipsum sint mollit magna labore occaecat ea commodo exercitation sunt eu incididunt deserunt cupidatat</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 d-flex justify-content-end align-items-center">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col-md-7">
+                <div class="media">
+                  <img src="img/user-claire-flores.png" alt="claire flores" class="img-fluid mr-3">
+                  <div class="media-body">
+                    <h5>Claire Flores</h5>
+                    <p>aliquip ad anim nostrud Lorem minim anim culpa ea cupidatat id cupidatat tempor sunt aliquip nulla anim in et aute anim</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 d-flex justify-content-end align-items-center">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- / Movie Reviews -->
+
+      <!-- Similar Movies -->
+      <section class="movies mb-5">
+        <div class="row text-center text-md-left">
+          <div class="col movie-header d-md-flex justify-content-between align-items-center">
+            <h2>Similar Movies</h2>
+          </div>
+        </div>
+        <hr />
+        <movie-list id="similarMovies"></movie-list>
+      </section>
+      <!-- / Similar Movies -->
+
+    </div>
+  </main>
+
+  <app-footer></app-footer>
+
+</body>
+</html>

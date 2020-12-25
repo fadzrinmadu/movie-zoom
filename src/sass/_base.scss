@@ -1,0 +1,23 @@
+// Base
+hr {
+  position: relative;
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 120px;
+    border: 2px solid $yellow;
+    bottom: -1px;
+    left: 0;
+    border-radius: 3px;
+  }
+}
+
+.navbar-brand,
+.footer-brand {
+  font-weight: 500;
+}

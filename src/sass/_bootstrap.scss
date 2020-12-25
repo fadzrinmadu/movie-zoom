@@ -1,0 +1,36 @@
+// Colors
+$black: #000000;
+$gray: #ebebeb;
+$red: #f25953;
+$yellow: #f5c518;
+$white: #ffffff;
+$primary: $red;
+$secondary: $yellow;
+$info: $gray;
+$bg-footer: #1c1c1c;
+
+// Button
+$btn-font-weight: 500;
+
+// Typography
+$h1-font-size: 2rem;
+$h2-font-size: 1.5rem;
+$h3-font-size: 1rem;
+$h5-font-size: 1rem;
+
+// Link
+$link-color: $black;
+
+// Spacing
+$spacers: (
+  6: 5rem, // 80px
+  7: 7.5rem, // 120px
+  8: 10.5rem // 168px
+);
+
+// Navbar
+$navbar-padding-y: 14px;
+$navbar-padding-x: 14px;
+$navbar-light-color: $black;
+
+@import '~bootstrap/scss/bootstrap';
